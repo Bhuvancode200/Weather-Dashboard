@@ -357,3 +357,70 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* DARK MODE*/
+body.dark-mode 
+{
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header h1,
+
+body.dark-mode #city-name,
+
+body.dark-mode #current-temp,
+
+body.dark-mode .forecast-container h2,
+
+body.dark-mode .forecast-high,
+
+body.dark-mode .forecast-low 
+{
+  color: #e0e0e0;
+}
+
+body.dark-mode .weather-container,
+body.dark-mode .forecast-container 
+{
+  background-color: #1f1f1f;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .forecast-card
+ {
+  background-color: #2c2c2c;
+  border-color: #444;
+}
+
+body.dark-mode .detail-label,
+body.dark-mode #current-date
+{
+  color: #bbbbbb;
+}
+
+body.dark-mode .error-container
+{
+  background-color: #3a1c1c;
+  color: #ffb3b3;
+}
+
+body.dark-mode footer 
+
+{
+  color: #aaa;
+}
+
+.dark-mode-toggle 
+{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+body.dark-mode .dark-mode-toggle 
+{
+  color: #e0e0e0;
+}
+
