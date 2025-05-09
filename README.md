@@ -56,4 +56,7 @@ A simple and responsive weather dashboard web application built using HTML, CSS,
 ## Project Structure
 ├── index.html<br>
 ├── script.js<br>
-└── styles.css
+├── styles.css<br>
+├── ScreenShot
+└── README.md
+
