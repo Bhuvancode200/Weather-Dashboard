@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+   <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+    <h1>Weather Dashboard</h1>
+    <div class="search-container">
+     <input type="text" id="city-input" placeholder="Enter city name...">
+    <button id="search-btn">Search</button>
+            </div>
+        </header>
+
+ <div id="loading" class="loading-container hidden">
+    <div class="loading-spinner"></div>
+            <p>Fetching weather data...</p>
+        </div>
+
+  <div id="error-container" class="error-container hidden">
+  <p id="error-message">City not found. Please try again.</p>
+        </div>
+
+        <section id="current-weather" class="weather-container hidden">
+            <div class="current-weather-header">
+                <h2 id="city-name">City-Name</h2>
+       <p id="current-date">Date</p>
+            </div>
+    
+            <div class="current-weather-body">
+                <div class="weather-icon-container">
+            <img id="weather-icon" src="/placeholder.svg" alt="Weather Icon">
+            <p id="weather-description">Weather_description</p>
+                </div>
+                <div class="temperature-container">
+                    <h2 id="current-temp">--°C</h2>
+                    <div class="hi-low">
+                 <span id="temp-high">High: --°C</span>
+                 <span id="temp-low">Low: --°C</span>
+        </div>
+        </div>
+        <div class="weather-details">
+                    <div class="detail">
+                 <span class="detail-label">Humidity</span>
+                <span id="humidity">--%</span>
+                    </div>
+                    <div class="detail">
+                <span class="detail-label">Wind-Speed</span>
+                <span id="wind-speed">-- m/s</span>
+        </div>
+        </div>
+         </div>
+    </section>
+
+        <!-- 5-Day Forecast Section -->
+        <section id="forecast-container" class="forecast-container hidden">
+         <h2>5-Day Forecast</h2>
+        <div id="forecast-cards" class="forecast-cards">
+            </div>
+    </section>
+    </div>
+
+    <footer>
+        <p>bhushan kumar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
