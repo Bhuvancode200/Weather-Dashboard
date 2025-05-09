@@ -19,6 +19,21 @@ A simple and responsive weather dashboard web application built using HTML, CSS,
 - CSS3
 - Vanilla JavaScript
 
+## ScreenShots
+
+
+### Raipur-Weather
+![Raipur-Weather](./ScreenShot/ScreenShot-1.png)
+
+
+### Error-Message
+![Error-Message](./ScreenShot/ScreenShot-2.png)
+
+
+### Pune-Weather
+![Pune-Weather](./ScreenShot/ScreenShot-3.png)
+
+
 ## Setup
 
 1.  **Download the files:** Ensure you have the `index.html`, `styles.css`, and `script.js` files in the same directory.
