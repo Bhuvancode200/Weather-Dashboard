@@ -33,7 +33,7 @@ const tempLow = document.getElementById("temp-low");
 
 const humidity = document.getElementById("humidity");
 
-const windSpeed = document.getElementById("wind-speed");
+const windSpeedoutput = document.getElementById("wind-speed");
 
 //  OpenWeatherMap API key in here!
 const API_KEY = "6e903b4b37ac6ea3f22f8cad007b04f5";
@@ -141,7 +141,7 @@ function updateCurrentWeather(data)
   tempLow.textContent = `Low: ${Math.round(data.main.temp_min)}°C`;
 
   humidity.textContent = `${data.main.humidity}%`;
-  windSpeed.textContent = `${data.wind.speed} m/s`;
+ windSpeedoutput.textContent = `${data.wind.speed} m/s`;
 }
 
 function updateForecast(data)
