@@ -229,3 +229,19 @@ function formatDate(date, short = false)
   return date.toLocaleDateString("en-US", options);
 }
 window.addEventListener("load", init);
+
+const toggle = document.getElementById('darkModeToggle');
+
+toggle.addEventListener('change', function () {
+  document.body.classList.toggle('dark-mode', toggle.checked);
+  localStorage.setItem('darkMode', toggle.checked ? 'enabled' : 'disabled');
+});
+
+// Load preference on page load
+window.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    toggle.checked = true;
+  }
+});
+
