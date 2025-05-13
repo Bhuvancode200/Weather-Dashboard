@@ -59,4 +59,3 @@ A simple and responsive weather dashboard web application built using HTML, CSS,
 ├── styles.css<br>
 ├── ScreenShot<br>
 └── README.md
-
